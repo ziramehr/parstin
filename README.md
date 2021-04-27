@@ -11,9 +11,21 @@ The primary objective here is to provide the public with free tools for seamless
 
 ## Value proposition
 Dr. Heydari Malayeri mentions the following points as two of the values in changing the writing system to Pārstin:
+
+
 1- "Equipping Pārsi with the alphabet which is compatible with the language."
+
+
 2- "A cultural excitation, or trigger, for associating Iranians with methodology and precision in thinking."
+
+
 I hope that this project succeeds in bringing us one step closer to these values.
 
-#Design
+# Design
 ![image](https://user-images.githubusercontent.com/83266560/116226851-573b1980-a708-11eb-8ed6-6673594a14c0.png)
+
+## Farsi OCR (Optical Character Recognition)
+For this process, a good approach might be to first evaluate the existing farsi OCRs and if the performance was not satisfactory (close to perfect) we have some approaches to try: 1- Take advantage of [the wealth of the novel fonts](https://maryamsoft.com/FontShop/) that has recently become available, thanks to our typographers, for creating datasets. 2- Take advantage of Image Augmation methods such as imgaug for adding various noise, rotation and warping effects to the dataset.
+
+## Parsi phonetic language model
+We need access to a dictionary database which provides us with the phonetics for each persian word.
