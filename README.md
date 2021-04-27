@@ -6,4 +6,4 @@ This writing system was explained by Iranian Philosopher and Translator Dr. Mir 
 (Source: https://t.me/persianmalayeri/1738)
 
 # Objective
-The objective here is to provide the public with free tools for seamlessly converting between the existing Persian literature from the common Arabic script to Pārstin script.
+The objective here is to provide the public with free tools for seamlessly converting the existing Persian literature from the common Arabic script to Pārstin script.
