@@ -1,5 +1,5 @@
 # About Pārstin
-Pārstin is the name proposed by Iranian Astrophysicist and Linguist Dr. Mohammad Heydari-Malayeri for an alternative writing system for the Persian language (Pārsi), resembling the Latin script. It has several advantages over the current script (let's call it farsi writing) which is adapted from Arabic, most importantly, it's precision in capturing Pārsi. Moreover, Pārsi is an Indo-European language which means that it has more commonalities with Latin than with Arabic. 
+Pārstin is the name proposed by Iranian Astronomer, Astrophysicist and Linguist Dr. Mohammad Heydari-Malayeri for an alternative writing system for the Persian language (Pārsi), resembling the Latin script. It has several advantages over the current script (let's call it farsi writing) which is adapted from Arabic, most importantly, it's precision in capturing Pārsi. Moreover, Pārsi is an Indo-European language which means that it has more commonalities with Latin than with Arabic. 
 The proposed writing system was justified and explained in detail by Iranian Philosopher and Translator Dr. Mir Shamsuddin Adib-Soltani in _An introduction to the writing of the Persian script._ Amirkabir Publications, Tehran, 1976. A summary of the outcomes is available in the below infographic thanks to Dr. Heydari-Malayeri. This project started under the influence of a series of his talks titled "Persian Writing" ([available on youtube since Oct 2018.](https://www.youtube.com/watch?v=t2P8ou7p2nk&list=PLuhW6Hw2wheOjqD5m-qmxI01Ky3d0v5nF))
 
 ![image](https://user-images.githubusercontent.com/83266560/116194068-2eedf380-a6e5-11eb-825f-b333e2c7c70b.png)
@@ -22,10 +22,17 @@ Dr. Heydari Malayeri mentions the following points as two of the values in chang
 I hope that this project succeeds in bringing us one step closer to these values.
 
 # Design
+## Initial Design
+I came up with the following initial design. Feedbacks are encouraged and appreciated.
 ![image](https://user-images.githubusercontent.com/83266560/116226851-573b1980-a708-11eb-8ed6-6673594a14c0.png)
 
 ## Farsi OCR (Optical Character Recognition)
-For this process, a good approach might be to first evaluate the existing farsi OCRs and if the performance was not satisfactory (close to perfect) we have some approaches to try: 1- Take advantage of [the wealth of the novel fonts](https://maryamsoft.com/FontShop/) that has recently become available, thanks to our typographers, for creating datasets. 2- Take advantage of Image Augmation methods such as imgaug for adding various noise, rotation and warping effects to the dataset.
+For this process, a good approach might be to first evaluate the existing farsi OCRs and if the performance was not satisfactory (close to perfect) we need to create a better OCR tool. Here are some ideas that I can imagine being helpful: 1- Take advantage of the common textual fonts as well as [the wealth of the novel fonts resembling handwriting](https://maryamsoft.com/FontShop/) that has recently become available, thanks to the creative work of iranian typographers, for creating training datasets. This way OCR will more likely be effective for handwritings as well as texts. 2- Take advantage of Image Augmation methods such as imgaug for adding various noise, rotation and warping effects to the dataset. 3- Use the database of classical Persian literature available from [Ganjoor](http://epub.ganjoor.net/) for creating the dataset.
 
-## Parsi phonetic language model
-We need access to a dictionary database which provides us with the phonetics for each persian word.
+## Pārsi phonetic language model
+We need access to, at least, a dataset of phonetics for each persian word. This can be saught in electronic Dictionaries, and Encyclopedias which provide phonetics for words in farsi writing system. At this time, the only resource that I could identify with similar data (Pārstin instead of phonetics) is the [Etymological Astronomy and Astrophysics Encyclopedia by Dr. M. Heydari-Malayeri](http://dictionary.obspm.fr/index.php).
+
+Eventually the language model should be evolved to recognize which [heteronym/heterophone](https://en.wikipedia.org/wiki/Heteronym_(linguistics)#:~:text=A%20heteronym%20(also%20known%20as,homographs%20that%20are%20not%20homophones.) to interpret basde on the context.
+
+## Coverting phonetics to Pārstin
+This step seems to have the least amount of complexity as there is a one-to-one mapping between the phonemes in Pārsi and the Pārstin alphabet.
