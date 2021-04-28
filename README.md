@@ -19,7 +19,7 @@ Dr. Heydari Malayeri mentions the following points as two of the values in chang
 2- "A cultural excitation, or trigger, for associating Iranians with methodology and precision in thinking."
 
 
-I hope that this project succeeds in bringing us one step closer to these values.
+It's thrilling that with this project's success we get one step closer to these values.
 
 # Design
 ## Initial Design
@@ -42,5 +42,5 @@ This step seems to have the least amount of complexity as there is a one-to-one 
 
 ## First challenges: Unwritten phonemes 
 The "-e" and "-ye" in the middle of a noun compund.
-### Solutions for predicting the unwritten phonems
-This information is almost always absent from the present farsi writing. A web extension that overlays text with Parstin can add an optional -e or -ye at the end of the such nouns so people can choose the correct pronunciation based on the context.
+### Solutions for predicting the unwritten phonemes
+This information is almost always absent from the present farsi writing. 1- A web extension that overlays text with Parstin can add an optional -e or -ye at the end of such noun compounds so people can choose the correct pronunciation based on the context. 2- A website can provide readers with short excerpts from literature written in both writing systems and provide them with tools to correct the Pārstin text.
