@@ -33,7 +33,7 @@ For this process, a good approach might be to first evaluate the existing farsi 
 A survey needs to be conducted to find the available Open Source language models and their utility. But most likely we need to develop our own:
 At least, we require to have, a comprehensive dataset of phonetics for each persian word. This can be saught in electronic Dictionaries, and Encyclopedias which provide phonetics for words in farsi writing system. At this time, the only resource that I could identify with similar data (Pārstin instead of phonetics) is the [Etymological Astronomy and Astrophysics Encyclopedia by Dr. M. Heydari-Malayeri](http://dictionary.obspm.fr/index.php).
 
-Eventually the language model should be evolved to recognize which [heteronym/heterophone](https://en.wikipedia.org/wiki/Heteronym_(linguistics)#:~:text=A%20heteronym%20(also%20known%20as,homographs%20that%20are%20not%20homophones) to interpret based on the context.
+Eventually the language model should be evolved to recognize which [heteronym/heterophone](https://en.wikipedia.org/wiki/Heteronym_(linguistics)) to interpret based on the context.
 ## An ongoing survey of the existing language models
 Google translate: does not provide text-to-speech for sentences in persian. 
 [Ariana text-to-speech](http://farsireader.com/webdemoen/): I could identify that this tool is capable of converting simple sentences to speech, so it can derive some of the unwritten phonetic information but as the complexity increases mistakes become prevalent to the point that it barely works for poetry. Also it not an open source application. 
