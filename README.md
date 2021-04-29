@@ -1,14 +1,19 @@
-# About Pārstin
-Pārstin is the name proposed by Iranian Astronomer, Astrophysicist and Linguist Dr. Mohammad Heydari-Malayeri for an alternative writing system for the Persian language (Pārsi), resembling the Latin script. It has several advantages over the current script (let's call it farsi writing) which is similar to Arabic, most importantly, its precision, consistency and flexibility in capturing Pārsi. Moreover, Pārsi is an Indo-European language which means that it has more commonalities with Latin than with Arabic. 
-The proposed writing system was justified and explained in detail by Iranian Philosopher and Translator Dr. Mir Shamsuddin Adib-Soltani in _An introduction to the writing of the Persian script._ Amirkabir Publications, Tehran, 1976. A summary of the outcomes is available in the below infographic thanks to Dr. Heydari-Malayeri. This project started under the influence of a series of his talks titled "Persian Writing" ([available on youtube since Oct 2018.](https://www.youtube.com/watch?v=t2P8ou7p2nk&list=PLuhW6Hw2wheOjqD5m-qmxI01Ky3d0v5nF))
+# About
+This project started under the impetus of a series lectures by Dr. M. Heydari Malāyeri titled "Persian Writing" ([available on youtube since Oct 2018.](https://www.youtube.com/watch?v=t2P8ou7p2nk&list=PLuhW6Hw2wheOjqD5m-qmxI01Ky3d0v5nF))
+For the time being this page is the single document tracking the software design specifications and developments as well as the linguistics insights which determine the design and development. As we progress, the information will migrate to designated websites and wiki pages to make this page shorter. Some of the features describes here may also migrate to designated repositories.
+# What is Pārstin?
+Pārsi, also known as Persian or Fārsi, [is a Western Iranian language belonging to the Iranian branch of the Indo-Iranian subdivision of the Indo-European languages](https://en.wikipedia.org/wiki/Persian_language). The Present Pārsi Writing System (PPWS) resembles Arabic writing. Pārstin is the name proposed by Iranian Astronomer, Astrophysicist and Linguist Dr. Mohammad Heydari-Malayeri for an alternative writing system for Pārsi, which resembles the Latin writing. It has significant advantages and improvements to offer over PPWS.
+The proposed writing system (Pārstin) was justified and explained in detail, after an in-depth analysis by Iranian Philosopher and Translator Dr. Mir Šamsoddin Adib-Soltāni in his seminal work: "Darāmad-i bar cegunegi-ye šive-ye xatt-e fārsi" _An Introduction to Problems of Persian Orthography._ Amirkabir Publications, Tehran, 1976. Dr. M. Heydari-Malayeri has prepared the following infographic showing the new alphabet. 
 
 ![image](https://user-images.githubusercontent.com/83266560/116194068-2eedf380-a6e5-11eb-825f-b333e2c7c70b.png)
 
 (Source: https://t.me/persianmalayeri/1738)
 
-## Objective
-The primary objective here is to provide the public with free tools for seamlessly converting digitized Persian literature and documents from the common Arabic script to Pārstin script.
-
+# Objectives
+## Converting content from PPWS to Pārstin
+The primary objective here is to provide the public with free tools for seamlessly converting digitized Persian literature, documents and webcontent from the common Arabic script to Pārstin script.
+## Pārstin composition tools
+Also to develop or adapt a viable keyboard layout for composition on Linux, Windows, MacOS, and iOS. I have already confirmed that Gboard - the Google Keyboard for Android provides us with a straightforward interface for typing in this alphabet for touchscreen devices running Android.
 ## Value proposition
 Dr. Heydari Malayeri mentions the following points as two of the values in changing the writing system to Pārstin:
 
