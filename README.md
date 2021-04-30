@@ -55,6 +55,8 @@ Such information is almost always absent from the present farsi writing, and add
 ### Orthography of -i and -yi at the end of non-specific or non-particular nouns
 ### Orthography of -hā at the end of plural nouns
 ### Orhography of Hamze and Ein
+### Distinguishing between v and w
+They share the same letter in PPWS.
 
 ## Strech goal
 Recommending Pārsi equivalents for the words in the rendered text that come from other languages.
