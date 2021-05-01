@@ -12,12 +12,10 @@ The proposed writing system (Pārstin) was justified and explained in detail, af
 # Objectives
 ## Converting content from PPWS to Pārstin
 The primary objective here is to provide the public with free tools for seamlessly converting digitized Persian literature, documents and webcontent from the common Arabic script to Pārstin script.
-## Pārstin composition tools
-Also, we need to develop or adapt a viable keyboard layout for composition on all platforms.
-**Linux (Ubuntu):** all the special characters in the Pārstin alphabet can be entered through the definition and use of the [Compose](https://help.ubuntu.com/stable/ubuntu-help/tips-specialchars.html.en) key.
-**Android (G-board), MacOS, iOS:** all the special Pārstin characters are accessible by long-pressing the corresponding letter (e.g z for ž, and a for ā) on the key board.
-**Windows 10 - after 2019** the special characters can be found in the Emoji Panel (WindowsKey + . ).
-## Value proposition
+## Strech goal
+Recommending Pārsi equivalents for the words, in the rendered text, that come from other languages.
+
+# Value proposition
 According to Dr. M. Heydari-Malayeri, here are two promises of changing the writing system to Pārstin:
 
 
@@ -61,5 +59,11 @@ Such information is almost always absent from the present farsi writing, and add
 ### Distinguishing between v and w
 They share the same letter in PPWS.
 
-## Strech goal
-Recommending Pārsi equivalents for the words in the rendered text that come from other languages.
+## Typing in Pārstin (Input Methods)
+Also, we need to develop or adapt a viable keyboard layout for composition on all platforms.
+
+**Linux (Ubuntu):** all the special characters in the Pārstin alphabet can be entered through the definition and use of the [Compose](https://help.ubuntu.com/stable/ubuntu-help/tips-specialchars.html.en) key.
+
+**Android (G-board), MacOS, iOS:** all the special Pārstin characters are accessible by long-pressing the corresponding letter (e.g z for ž, and a for ā) on the key board.
+
+**Windows 10 - after 2019** the special characters can be found in the Emoji Panel (WindowsKey + . ).
