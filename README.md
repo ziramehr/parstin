@@ -60,7 +60,6 @@ Such information is almost always absent from the present farsi writing, and add
 They share the same letter in PPWS.
 
 ## Typing in Pārstin (Input Methods)
-Also, we need to develop or adapt a viable keyboard layout for composition on all platforms.
 
 **Linux (Ubuntu):** all the special characters in the Pārstin alphabet can be entered through the definition and use of the [Compose](https://help.ubuntu.com/stable/ubuntu-help/tips-specialchars.html.en) key.
 
