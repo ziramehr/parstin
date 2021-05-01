@@ -51,7 +51,7 @@ This step seems to have the least amount of complexity as there is a one-to-one 
 ## Challenges
 ### Unwritten phonemes 
 For example, he "-e" and "-ye" in the middle of a noun compound.
-### Solutions for predicting the unwritten phonemes
+#### Solutions for predicting the unwritten phonemes
 Such information is almost always absent from the present farsi writing, and added in the minds of the reader. Therefore, we need to populate a database from the users' input for training the model for this purpose. Two approaches come to mind at the initial stage when the database is so small that the Pārstin conversion is still unreliable. 1- A web extension that overlays text with Parstin can add an optional -e or -ye at the end of such noun compounds so people can make the correct choice based on the context. 2- A website can provide readers with short excerpts from literature written in both writing systems and provide them with tools to correct the Pārstin text.
 ### Orthography of -i and -yi at the end of non-specific or non-particular nouns
 ### Orthography of -hā at the end of plural nouns
