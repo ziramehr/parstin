@@ -32,6 +32,16 @@ It's thrilling that with this project's success we can get one step closer to su
 I came up with the following initial design. Feedbacks are encouraged and appreciated.
 Pārstin Engine Preliminary Workflow![image](https://user-images.githubusercontent.com/83266560/117455067-a39e0a80-aefb-11eb-96b5-d673f5382249.png)
 
+## Phase 1 of Pārstin's AI
+To successfuly transliterate a Persian text to Pârstin Objectives:
+
+1. Adapting or developing a Comprehensive Index of Pârsi words (in PPWS) and their pronounciation (or their Pârstin transliteration).
+2. Developing an AI model for predicting the pronounciation or Pârstin transliteration of a word in PPWS based on 1. This is specially useful when we encounter a new word which is not in our index.
+3. Deriving all the possible tranliterations for each word in a phrase (or each unit separated by a space, e.g. when dealing with non-particular, or plural nouns).
+4. Develping a UI for visualizing all the available options,
+5. Collecting the users' interpretation data for the next phase.
+
+This Phase can be implemented in a web browser environment. For example az an extension that overlays the webpages, or as a designated website which presents the reader with Pârsi literature transliterated in Pârstin and gives them the option to contribute to the interpretation it one-phrase-at-a-time.
 
 # Present Pārsi Handwriting OCR (Optical Character Recognition)
 For this process, a good approach might be to first evaluate the existing farsi OCRs and if the performance was not satisfactory (close to perfect) we need to create a better OCR tool. Here are some ideas that I can imagine being helpful: 1- Taking advantage of the common textbook fonts as well as [the wealth of the novel fonts resembling handwriting and calligraphy](https://maryamsoft.com/FontShop/) that has recently become available, thanks to the creative work of iranian typographers, to creating training datasets. This way the OCR will more likely be effective for handwritings as well as texts. 2- Take advantage of Image Augmation methods such as imgaug for adding various noise, rotation and distortion effects to the dataset. 3- Use the database of classical Persian literature available from [Ganjoor](http://epub.ganjoor.net/) for creating the dataset.
@@ -49,6 +59,8 @@ Google translate: does not provide text-to-speech for sentences in PPWS.
 ## Coverting phonetics to Pārstin
 This step seems to have the least amount of complexity as there is a one-to-one mapping between the phonemes in Pārsi and the Pārstin graphemes.
 
+## Challenges
+There is a fundamental distinction between Pārstin and other transliteration algorithms. Here the pronounciation of the words are interpreted based on the context of the phrases that they make up.
 ## Challenges
 ### Unwritten phonemes 
 For example, he "-e" and "-ye" in the middle of a noun compound.
