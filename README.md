@@ -30,7 +30,8 @@ It's thrilling that with this project's success we can get one step closer to su
 # Design
 ## Initial Design
 I came up with the following initial design. Feedbacks are encouraged and appreciated.
-![image](https://user-images.githubusercontent.com/83266560/116226851-573b1980-a708-11eb-8ed6-6673594a14c0.png)
+Pārstin Engine Preliminary Workflow![image](https://user-images.githubusercontent.com/83266560/117455067-a39e0a80-aefb-11eb-96b5-d673f5382249.png)
+
 
 # Present Pārsi Handwriting OCR (Optical Character Recognition)
 For this process, a good approach might be to first evaluate the existing farsi OCRs and if the performance was not satisfactory (close to perfect) we need to create a better OCR tool. Here are some ideas that I can imagine being helpful: 1- Taking advantage of the common textbook fonts as well as [the wealth of the novel fonts resembling handwriting and calligraphy](https://maryamsoft.com/FontShop/) that has recently become available, thanks to the creative work of iranian typographers, to creating training datasets. This way the OCR will more likely be effective for handwritings as well as texts. 2- Take advantage of Image Augmation methods such as imgaug for adding various noise, rotation and distortion effects to the dataset. 3- Use the database of classical Persian literature available from [Ganjoor](http://epub.ganjoor.net/) for creating the dataset.
