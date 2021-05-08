@@ -1,6 +1,6 @@
 # About
 This project started under the impetus of a series of lectures by Dr. M. Heydari Malāyeri titled "Persian Writing" ([available on youtube since Oct 2018.](https://www.youtube.com/watch?v=t2P8ou7p2nk&list=PLuhW6Hw2wheOjqD5m-qmxI01Ky3d0v5nF))
-For the time being this page is the single document capturing the software design specifications and tracking the developments. It also includes linguistic insights which drive the design and development. As we progress, some of the information will migrate to designated websites and wiki pages to make this page shorter. Some of the features described here may also migrate to designated repositories.
+For the time being, this page is the single document capturing the software design specifications and tracking the developments. It also includes linguistic insights which drive the design and development. As we progress, some of the information will migrate to designated websites and wiki pages to make this page shorter. Some of the features described here may also migrate to designated repositories.
 # What is Pārstin?
 Pārsi, also known as Persian or Fārsi, [is a Western Iranian language belonging to the Iranian branch of the Indo-Iranian subdivision of the Indo-European languages](https://en.wikipedia.org/wiki/Persian_language). The Present Pārsi Writing System (PPWS) resembles Arabic writing. Pārstin is the name proposed by Iranian Astronomer, Astrophysicist and Linguist Dr. Mohammad Heydari-Malayeri for an alternative writing system for Pārsi, which resembles the Latin transcription. It has significant advantages and improvements to offer over PPWS.
 The proposed writing system (Pārstin) was justified and explained in detail, after an in-depth analysis by Iranian Philosopher and Translator Dr. Mir Šamsoddin Adib-Soltāni in his book: "Darāmad-i bar cegunegi-ye šive-ye xatt-e fārsi" _An Introduction to Problems of Persian Orthography._ Amirkabir Publications, Tehran, 1976. Thanks to Dr. M. Heydari-Malayeri for preparing the following infographic showing the new alphabet. 
@@ -11,7 +11,7 @@ The proposed writing system (Pārstin) was justified and explained in detail, af
 
 # Objectives
 ## Converting content from PPWS to Pārstin
-The primary objective here is to provide the public with free tools for seamlessly converting digitized Persian literature, documents and webcontent from the common Arabic script to Pārstin script.
+The primary objective here is to provide the public with free tools for seamlessly transliterating the digitized Persian literature, documents and web content in PPWS into the Pārstin script.
 ## Strech goal
 Recommending Pārsi equivalents for the words, in the rendered text, that come from other languages.
 
@@ -35,7 +35,7 @@ Pārstin Engine Preliminary Workflow![image](https://user-images.githubusercont
 # Provisional Road Map
 ## PHASE 1
 ### Objectives
-The most time-and-effort-consuming step in a machine learning project is almost always the data collection stage, and should be started as early as possible. The hardest-to-obtain data here is how a human would interpolate all the unwritten information in PPWS (a, e, o, etc) in order to interpret a phrase and pronounce it. Therefore, this should be our primary focus. In this phase we aim to develop the means for transliterating all the heteronyms, for any word written in PPWS, into Pârstin. Also, we want to display all the possible Pârstin interpretations of a phrase to a user as options to choose between them, and to collect their input from this interaction. More specifically, these are the requirements to be satisfied:
+The most time-and-effort-consuming step in a machine learning project is almost always the data collection stage, and should be planned as early as possible. The hardest-to-obtain data in our case is how a Pârsi reader would interpolate all the unwritten information in PPWS (_a, e, o,_ etc) in order to interpret a phrase and pronounce it. Therefore, this should be our primary focus. In this phase we aim to develop the means for transliterating all the heteronyms, for any words written in PPWS, into Pârstin. Also, we want to display all the possible Pârstin interpretations of a phrase to a user as options to choose between them, and to collect their input from this interaction. More specifically, these are the requirements to be satisfied:
 1. Explaining the rationals as well as establishing the orthographic rules for Pârstin.
 2. Adapting or developing a Comprehensive Index of Pârsi words (in PPWS) and their pronunciation (either phonetics or Pârstin transcription).
 3. Implementing the mapping for converting between phonetics and Pârstin.
@@ -51,20 +51,28 @@ The most time-and-effort-consuming step in a machine learning project is almost 
 Example:![image](https://user-images.githubusercontent.com/83266560/117551421-b77c6600-affa-11eb-96e3-2803c1791d4f.png)
 
 ### Implementation
-A conceivable interpretation can involve a web interface showing the user a random verse from a piece of modern poetry (e.g. Yušij, Axawân Sâles, Sepehri, Šâmlu, Kasrâyi, etc.) and presenting them with pronunciation choices for that verse. If the user would like that verse, they could choose to conduct the same exercise for a larger portion of the same poem one verse at a time.
+A conceivable interpretation can involve a web interface showing the user a random verse from a piece of modern poetry (e.g. from Yušij, Axawân Sâles, Sepehri, Šâmlu, etc.) and presenting them with pronunciation choices for that verse. If the user found themselves interested, they could choose to conduct the same exercise for a larger portion of the same poem one verse at a time.
 
 ### Critically-needed resources
-- Any (semi-)comprehensive database of persian words (in PPWS) accompanied with their pronunciation or Pârstin transliteration would be extremely crucial and helpful. At this time, the only avialble resource that I could locate with useful data (Pārstin instead of phonetics) is the [Etymological Astronomy and Astrophysics Encyclopedia by Dr. M. Heydari-Malayeri](http://dictionary.obspm.fr/index.php).
+- Any (semi-)comprehensive database of persian words (in PPWS) accompanied with their pronunciation or Pârstin transliteration would be extremely crucial and helpful. At this time, the only avialble resource that I could locate with such data is the [Etymological Astronomy and Astrophysics Encyclopedia by Dr. M. Heydari-Malayeri](http://dictionary.obspm.fr/index.php).
 - A community of users and developers who can relate with the rationals of this project and acknowledge its value to the point that they would be willing to contribute to its developments.
 
 ## PHASE 2
 ### Objectives
-Once the amount of data collected in PHASE 1 is sufficient enough to train an AI algorithm for interpreting the pronunciation of phrases, we can present the user with the AI's predictions transcribed in Pârstin and let them correct it when needed.
+Once the amount of data collected in PHASE 1 is sufficient enough to train an AI algorithm for interpreting the pronunciation of phrases, we can present the user with the AI's predictions transcribed in Pârstin and encourage the user to correct them when needed. It is important to collect this data as well.
 
 ### Implementation
-This Phase can also be implemented in a web browser environment. For example, as an extension which overlays the webpages in PPWS with Pârstin transliteration, or as a designated website which presents the reader with the predicted Pârstin transliteration of Pârsi literature, and gives them the option to correct the predictions when required.FUTURE PHASESWhile the databases described in previous phases are being populated, and the Machine Learning Models are being periodically retrained with new data, we can focus on:-OCR of texts and manuscripts,-Advancing the AI to become capable of transliterating even the Classical Persian Literature and Poetry,-Making a user-friendly app which can work between scanners and printers as seamlessly as possible,-Developing composition tools (e.g. a keyboard for smartphone) for suggesting precise Pârsi equivalents for the obscure and imprecise foreign vocabulary that has infiltrated Pârsi through ages.
+This Phase can also be implemented in a web browser environment. For example, as an extension which overlays the webpages in PPWS with Pârstin transliteration, or as a designated website which presents the reader with the predicted Pârstin transliteration of Pârsi literature, and gives them the option to correct the predictions when required.
 
-## Approaching the PPWS OCR (Optical Character Recognition)
+## FUTURE PHASES
+While the databases described in previous phases are being populated, and the Machine Learning Models are being periodically retrained with new data, we can focus on:
+- OCR (Optical Character Recognition) of texts and manuscripts,
+- Advancing the AI to become capable of transliterating even the Classical Persian Literature and Poetry,
+- Making a user-friendly app which can work between scanners and printers as seamlessly as possible,
+- Developing composition tools (e.g. a keyboard for smartphones) for suggesting precise Pârsi equivalents for the obscure and imprecise foreign vocabulary that has infiltrated Pârsi through ages.
+
+# Miscellaneous
+## Thoughts on the PPWS OCR
 For this process, a good approach might be to first evaluate the existing PPWS OCRs and if the performance was not satisfactory (close to perfect) we need to consider creating a better OCR tool. Here are some ideas that I can imagine being helpful:
 1- Taking advantage of the common textbook fonts as well as [the wealth of the novel fonts resembling handwriting and calligraphy](https://maryamsoft.com/FontShop/) that has recently become available, thanks to the creative work of iranian typographers, to creating training datasets. This way the OCR will more likely be effective for handwritings as well as texts.
 2- Take advantage of Image Augmation methods such as imgaug for adding various noise, rotation and distortion effects to the dataset.
@@ -75,7 +83,7 @@ A quick test of Google Translate's handwriting input for Pārsi shows promising 
 ## An ongoing survey of the existing language models
 Google translate: does not provide text-to-speech for sentences in PPWS. 
 [Ariana text-to-speech](http://farsireader.com/webdemoen/): I could determine that this tool is capable of converting simple sentences to speech, so it can derive some of the unwritten phonetic information but as the complexity increases mistakes become prevalent to the point that it barely works for poetry. Also it is not an open source application. 
-## Coverting phonetics to Pārstin
+## Converting phonetics to Pārstin
 This step seems to have the least amount of complexity as there is a one-to-one mapping between the phonemes in Pārsi and the Pārstin graphemes.
 
 ## Challenges
