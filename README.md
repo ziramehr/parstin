@@ -34,7 +34,8 @@ Pārstin Engine Preliminary Workflow![image](https://user-images.githubusercont
 
 # Provisional Road Map
 ## PHASE 1
-ObjectivesThe most time-and-effort-consuming step in a machine learning project is almost always the data collection stage, and should be started as early as possible. The hardest-to-obtain data here is how a human would interpolate all the unwritten information in PPWS (a, e, o, etc) in order to interpret a phrase and pronounce it. Therefore, this should be our primary focus. In this phase we aim to develop the means for transliterating all the heteronyms, for any word written in PPWS, into Pârstin. Also, we want to display all the possible Pârstin interpretations of a phrase to a user as options to choose between them, and to collect their input from this interaction. More specifically, these are the requirements to be satisfied:
+### Objectives
+The most time-and-effort-consuming step in a machine learning project is almost always the data collection stage, and should be started as early as possible. The hardest-to-obtain data here is how a human would interpolate all the unwritten information in PPWS (a, e, o, etc) in order to interpret a phrase and pronounce it. Therefore, this should be our primary focus. In this phase we aim to develop the means for transliterating all the heteronyms, for any word written in PPWS, into Pârstin. Also, we want to display all the possible Pârstin interpretations of a phrase to a user as options to choose between them, and to collect their input from this interaction. More specifically, these are the requirements to be satisfied:
 1. Explaining the rationals as well as establishing the orthographic rules for Pârstin.
 2. Adapting or developing a Comprehensive Index of Pârsi words (in PPWS) and their pronunciation (either phonetics or Pârstin transcription).
 3. Implementing the mapping for converting between phonetics and Pârstin.
@@ -45,9 +46,9 @@ ObjectivesThe most time-and-effort-consuming step in a machine learning project 
 
 ### Algorithm and an example phrase study 
 
-Pārstin's AI_ Phase 1 Algorithm.jpg![image](https://user-images.githubusercontent.com/83266560/117551418-afbcc180-affa-11eb-8df5-e2cc5845d3b9.png)
+![image](https://user-images.githubusercontent.com/83266560/117551418-afbcc180-affa-11eb-8df5-e2cc5845d3b9.png)
 
-Pārstin's AI_ Phase 1 Example.jpg![image](https://user-images.githubusercontent.com/83266560/117551421-b77c6600-affa-11eb-96e3-2803c1791d4f.png)
+Example:![image](https://user-images.githubusercontent.com/83266560/117551421-b77c6600-affa-11eb-96e3-2803c1791d4f.png)
 
 ### Implementation
 A conceivable interpretation can involve a web interface showing the user a random verse from a piece of modern poetry (e.g. Yušij, Axawân Sâles, Sepehri, Šâmlu, Kasrâyi, etc.) and presenting them with pronunciation choices for that verse. If the user would like that verse, they could choose to conduct the same exercise for a larger portion of the same poem one verse at a time.
@@ -63,7 +64,7 @@ Once the amount of data collected in PHASE 1 is sufficient enough to train an AI
 ### Implementation
 This Phase can also be implemented in a web browser environment. For example, as an extension which overlays the webpages in PPWS with Pârstin transliteration, or as a designated website which presents the reader with the predicted Pârstin transliteration of Pârsi literature, and gives them the option to correct the predictions when required.FUTURE PHASESWhile the databases described in previous phases are being populated, and the Machine Learning Models are being periodically retrained with new data, we can focus on:-OCR of texts and manuscripts,-Advancing the AI to become capable of transliterating even the Classical Persian Literature and Poetry,-Making a user-friendly app which can work between scanners and printers as seamlessly as possible,-Developing composition tools (e.g. a keyboard for smartphone) for suggesting precise Pârsi equivalents for the obscure and imprecise foreign vocabulary that has infiltrated Pârsi through ages.
 
-# Approaching the PPWS OCR (Optical Character Recognition)
+## Approaching the PPWS OCR (Optical Character Recognition)
 For this process, a good approach might be to first evaluate the existing PPWS OCRs and if the performance was not satisfactory (close to perfect) we need to consider creating a better OCR tool. Here are some ideas that I can imagine being helpful:
 1- Taking advantage of the common textbook fonts as well as [the wealth of the novel fonts resembling handwriting and calligraphy](https://maryamsoft.com/FontShop/) that has recently become available, thanks to the creative work of iranian typographers, to creating training datasets. This way the OCR will more likely be effective for handwritings as well as texts.
 2- Take advantage of Image Augmation methods such as imgaug for adding various noise, rotation and distortion effects to the dataset.
