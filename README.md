@@ -54,7 +54,7 @@ Example:![image](https://user-images.githubusercontent.com/83266560/117551421-b7
 A conceivable interpretation can involve a web interface showing the user a random verse from a piece of modern poetry (e.g. from Yušij, Axawân Sâles, Sepehri, Šâmlu, etc.) and presenting them with pronunciation choices for that verse. If the user found themselves interested, they could choose to conduct the same exercise for a larger portion of the same poem one verse at a time.
 
 ### Critically-needed resources
-- Any (semi-)comprehensive database of persian words (in PPWS) accompanied with their pronunciation or Pârstin transliteration would be extremely crucial and helpful. At this time, the only avialble resource that I could locate with such data is the [Etymological Astronomy and Astrophysics Encyclopedia by Dr. M. Heydari-Malayeri](http://dictionary.obspm.fr/index.php).
+- Any (semi-)comprehensive database of persian words (in PPWS) accompanied with their phonetics or Pârstin transliteration would be extremely crucial and helpful. At this time, the only avialble resource that I could locate with such data is the [Etymological Astronomy and Astrophysics Encyclopedia by Dr. M. Heydari-Malayeri](http://dictionary.obspm.fr/index.php).
 - A community of users and developers who can relate with the rationals of this project and acknowledge its value to the point that they would be willing to contribute to its developments.
 
 ## PHASE 2
