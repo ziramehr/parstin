@@ -36,7 +36,7 @@ Pārstin Engine Preliminary Workflow![image](https://user-images.githubusercont
 ## PHASE 1
 ### Objectives
 The most time-and-effort-consuming step in a machine learning project is almost always the data collection stage, and should be planned as early as possible. The hardest-to-obtain data in our case is how a Pârsi reader would interpolate all the unwritten information in PPWS (_a, e, o,_ etc) in order to interpret a phrase and pronounce it. Therefore, this should be our primary focus. In this phase we aim to develop the means for transliterating all the heteronyms, for any words written in PPWS, into Pârstin. Also, we want to display all the possible Pârstin interpretations of a phrase to a user as options to choose between them, and to collect their input from this interaction. More specifically, these are the requirements to be satisfied:
-1. Explaining the rationals as well as establishing the orthographic rules for Pârstin.
+1. Explaining the rationals as well as establishing the orthographic rules for Pārstin.
 2. Adapting or developing a Comprehensive Index of Pârsi words (in PPWS) and their pronunciation (either phonetics or Pârstin transcription).
 3. Implementing the mapping for converting between phonetics and Pârstin.
 4. Developing an AI model for predicting the pronunciation of a word in PPWS based on the training data available from 2. This is specially useful when we encounter a new word which is not in our index.
@@ -51,25 +51,25 @@ The most time-and-effort-consuming step in a machine learning project is almost 
 Example:![image](https://user-images.githubusercontent.com/83266560/117551421-b77c6600-affa-11eb-96e3-2803c1791d4f.png)
 
 ### Implementation
-A conceivable interpretation can involve a web interface showing the user a random verse from a piece of modern poetry (e.g. from Yušij, Axawân Sâles, Sepehri, Šâmlu, etc.) and presenting them with pronunciation choices for that verse. If the user found themselves interested, they could choose to conduct the same exercise for a larger portion of the same poem one verse at a time.
+A conceivable interpretation can involve a web interface showing the user a random verse from a piece of modern poetry (e.g. from Yušij, Axawān Sāles, Sepehri, Šāmlu, etc.) and presenting them with pronunciation choices for that verse. If the user found themselves interested, they could choose to conduct the same exercise for a larger portion of the same poem one verse at a time.
 
 ### Critically-needed resources
-- Any (semi-)comprehensive database of persian words (in PPWS) accompanied with their phonetics or Pârstin transliteration would be extremely crucial and helpful. At this time, the only avialble resource that I could locate with such data is the [Etymological Astronomy and Astrophysics Encyclopedia by Dr. M. Heydari-Malayeri](http://dictionary.obspm.fr/index.php).
+- Any (semi-)comprehensive database of persian words (in PPWS) accompanied with their phonetics or Pārstin transliteration would be extremely crucial and helpful. At this time, the only avialble resource that I could locate with such data is the [Etymological Astronomy and Astrophysics Encyclopedia by Dr. M. Heydari-Malayeri](http://dictionary.obspm.fr/index.php).
 - A community of users and developers who can relate with the rationals of this project and acknowledge its value to the point that they would be willing to contribute to its developments.
 
 ## PHASE 2
 ### Objectives
-Once the amount of data collected in PHASE 1 is sufficient enough to train an AI algorithm for interpreting the pronunciation of phrases, we can present the user with the AI's predictions transcribed in Pârstin and encourage the user to correct them when needed. It is important to collect this data as well.
+Once the amount of data collected in PHASE 1 is sufficient enough to train an AI algorithm for interpreting the pronunciation of phrases, we can present the user with the AI's predictions transcribed in Pārstin and encourage the user to correct them when needed. It is important to collect this data as well.
 
 ### Implementation
-This Phase can also be implemented in a web browser environment. For example, as an extension which overlays the webpages in PPWS with Pârstin transliteration, or as a designated website which presents the reader with the predicted Pârstin transliteration of Pârsi literature, and gives them the option to correct the predictions when required.
+This Phase can also be implemented in a web browser environment. For example, as an extension which overlays the webpages in PPWS with Pārstin transliteration, or as a designated website which presents the reader with the predicted Pārstin transliteration of Pārsi literature, and gives them the option to correct the predictions when required.
 
 ## FUTURE PHASES
 While the databases described in previous phases are being populated, and the Machine Learning Models are being periodically retrained with new data, we can focus on:
 - OCR (Optical Character Recognition) of texts and manuscripts,
 - Advancing the AI to become capable of transliterating even the Classical Persian Literature and Poetry,
 - Making a user-friendly app which can work between scanners and printers as seamlessly as possible,
-- Developing composition tools (e.g. a keyboard for smartphones) for suggesting precise Pârsi equivalents for the obscure and imprecise foreign vocabulary that has infiltrated Pârsi through ages.
+- Developing composition tools (e.g. a keyboard for smartphones) for suggesting precise Pārsi equivalents for the obscure and imprecise foreign vocabulary that has infiltrated Pārsi through ages.
 
 # Miscellaneous
 ## Thoughts on the PPWS OCR
@@ -102,6 +102,6 @@ They share the same letter in PPWS.
 
 **Linux (Ubuntu):** all the special characters in the Pārstin alphabet can be entered through the definition and use of the [Compose](https://help.ubuntu.com/stable/ubuntu-help/tips-specialchars.html.en) key.
 
-**Android (G-board), MacOS, iOS:** all the special Pārstin characters are accessible by long-pressing the corresponding letter (e.g z for ž, and a for ā) on the key board.
+**Android (G-board), MacOS, iOS:** all the special Pārstin characters are accessible by long-pressing the corresponding letter (e.g z for ž, and a for ā) on the key board. (Update: MacOS cannot do ğ by default. iOS TBD)
 
 **Windows 10 - after 2019** the special characters can be found in the Emoji Panel (WindowsKey + . ).
